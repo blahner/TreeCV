@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TreeCV</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicn –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/shrek_favicon.png">
+</head>
+<body>
+    <div class="header-info">
+        <h1>Shrek</h1>
+        <div class="headshot-container">
+            <img src="images/shrek.webp" alt="headshot" class="headshot"/>
+        </div>
+        <div class="education">
+            <p><strong>Education:</strong></p>
+            <p>PhD Candidate: Far Far Away University</p>
+            <br>
+            <p>M.S.: Univeristy of Sherwood</p>
+            <p>B.S.: Duloc College</p>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/">
+                <svg height="20" width="20" viewBox="0 0 16 16">
+                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/">
+                <svg height="20" width="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                LinkedIn
+            </a>
+            <a href="https://scholar.google.com/">
+                <svg height="20" width="20" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+                </svg>
+                Google Scholar
+            </a>
+        </div>
+        <p>Contact: shrek [at] gmail [dot] com</p>
+        <div class="summary">
+            <p><strong>Current Role:</strong> Swamp researcher (2010-Present).</p>
+        </div>
+        <div class="summary">
+            <p><strong>Research Summary:</strong></p>
+            <p> 
+            I specialize in swamp security systems.
+            </p>
+        </div>
+    </div>
+    <div id="tree-container">
+        <div class="tree-header">
+            <strong>TreeCV:</strong> Click on a filled node (●) to expand/collapse children nodes. If node is clickable (🔗), click on the text to visit the URL.
+        </div>
+        <div id="tree-visualization"></div>
+        <div class="tree-footer">
+            <div class="legend">
+                <h4>Legend:</h4>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <span>●</span>
+                        <span class="text-green">Skills</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>●</span>
+                        <span class="text-blue">Work Experience</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>●</span>
+                        <span class="text-red">Film</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>●</span>
+                        <span class="text-orange">Patents</span>
+                    </div>
+                    <div class="legend-item">
+                        <span>●</span>
+                        <span class="text-purple">Awards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sections-container">
+        <div class="section" onclick="toggleSection(event, 'experience')">
+            <div class="section-header text-blue">Work Experience</div>
+            <div id="experience" class="section-content">
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="company">MySwamp and Co.</span>
+                        <span class="role">Security Specialist</span>
+                        <span class="date">2021-Present</span>
+                    </div>
+                    <div class="work-details">
+                        <ul>
+                            <li>Maintain a safe and private swamp for my wife and kids by developing and implementing advanced security systems.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="company">Far Far Away Farmaceuticals</span>
+                        <span class="role">Molecular Virologist</span>
+                        <span class="date">2010-2021</span>
+                    </div>
+                    <div class="work-details">
+                        <ul>
+                            <li>Specialize in preparing anti-viral agents to be used in vaccines to promote swamp health.</li>
+                            <li>Inventor of patented anti-viral agent preparation and use methods.</li>
+                        </ul>
+                    </div>
+                </div>
+             
+                <div class="work-item">
+                    <div class="work-header">
+                        <span class="company">Shrek LLC</span>
+                        <span class="role">Knight in Shining Armor</span>
+                        <span class="date">2001-2010</span>
+                    </div>
+                    <div class="work-details">
+                        <ul>
+                            <li>Rescued a princess from a tower.</li>
+                            <li>Have a noble steed.</li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+        <div class="section" onclick="toggleSection(event, 'publications')">
+
+            <div class="section-header text-red">Film</div>
+
+            <div id="publications" class="section-content">
+                <div class="year-header">2010</div>
+                <div class="paper">
+                    <div class="paper-title">
+                        Shrek Forever After.
+                    </div>
+                    <div class="authors">
+                        Directed by Mike Mitchell.
+                    </div>
+                    <div class="venue">Dreamworks Animation, 2010</div>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Shrek_Forever_After" target="_blank">Wikipedia</a> |
+                    </div>
+                </div>
+                <div class="year-header">2007</div>
+
+                <div class="paper">
+                    <div class="paper-title">
+                        Shrek the Third.
+                    </div>
+                    <div class="authors">
+                        Directed by Chris Miller and Raman Hui.
+                    </div>
+                    <div class="venue">Dreamworks Animation, 2007.</div>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Shrek_the_Third" target="_blank">Wikipedia</a> |
+                    </div>
+                </div>
+
+                <div class="year-header">2004</div>
+
+                <div class="paper">
+                    <div class="paper-title">
+                        Shrek 2.
+                    </div>
+                    <div class="authors">
+                        Directed by Andrew Adamson, Kelly Asbury, and Conrad Vernon.
+                    </div>
+                    <div class="venue">Dreamworks Animation, 2004.</div>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Shrek_2" target="_blank">Wikipedia</a> |
+                    </div>
+                </div>
+
+                <div class="year-header">2001</div>
+
+                <div class="paper">
+                    <div class="paper-title">
+                        Shrek.
+                    </div>
+                    <div class="authors">
+                        Directed by Andrew Adamson and Vicky Jenson.
+                    </div>
+                    <div class="venue">Dreamworks Animation, 2001.</div>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Shrek" target="_blank">Wikipedia</a> |
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" onclick="toggleSection(event, 'patents')">
+            <div class="section-header text-orange">Patents</div>
+            <div id="patents" class="section-content">
+                <div class="patent-item">
+                    <div class="patent-header">
+                        <div class="patent-title">Use of shrek proteins for inactivating viral infectivity and to produce live-attenuated vaccines against viruses.</div>
+                        <div class="patent-date">April 2021</div>
+                    </div>
+                    <div class="patent-details">
+                        <ul>
+                            <li>US Patent No.: <a href="https://ppubs.uspto.gov/dirsearch-public/patents/html/20210093709?source=US-PGPUB&requestToken=eyJzdWIiOiIzNDQ0OTc1NS1jZDA3LTQwNTItOWM2Yi04YWNiNzJhMDg3MzUiLCJ2ZXIiOiJiZjRkOTQyZS1jMzdjLTRjZGItOTAyOS1jZWJjOTcyY2NlMWMiLCJleHAiOjB9" target="_blank">US-20210093709-A1</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+        <div class="section" onclick="toggleSection(event, 'awards')">
+            <div class="section-header text-purple">Awards</div>
+            <div id="awards" class="section-content">
+                <div class="award-item">
+                    <div class="award-header">
+                        <div class="award-title">Best Animated Feature.</div>
+                        <div class="award-date">2002</div>
+                    </div>
+                    <div class="award-details">
+                        <ul>
+                            <li>Won Best Animated Feature.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="award-header">
+                        <div class="award-title">Most Preferred Song from a Film</div>
+                        <div class="award-date">2005</div>
+                    </div>
+                    <div class="award-details">
+                        <ul>
+                            <li>Won Most Preferred Song from a Film with "Accidentally In Love."</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script src="javascript.js"></script>
+    <footer style="text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #ccc; color: #666;">
+        Last updated: Fall 2024
+    </footer>
+</body>
+</html>

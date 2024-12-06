@@ -1,0 +1,77 @@
+{
+  "name": "Shrek",
+  "color": "black",
+  "children": [
+    {"name": "Swamp Security", "color": "green",
+      "children": [
+        {
+          "name": "Security Specialist, MySwamp and Co.", "size": 1000, "color": "blue",
+          "children": [
+            {"name": "What are you doing in my swamp?!", "url": "https://www.youtube.com/watch?v=CVf9Ail2pY0", "size": 3812},
+            {"name": "Advanced Torch & Pitchfork Deterrence", "size": 1000},
+            {"name": "Territorial Roaring", "size": 1000}
+          ]
+        },
+        {
+          "name": "Molecular Virologist, Far Far Away Pharmaceuticals", "size": 1000, "color": "blue",
+          "children": [
+            {"name": "SHREK PROTEINS FOR INACTIVATING VIRAL INFECTIVITY", "size": 1000, "color": "orange", "url": "https://ppubs.uspto.gov/dirsearch-public/patents/html/20210093709?source=US-PGPUB&requestToken=eyJzdWIiOiIzNDQ0OTc1NS1jZDA3LTQwNTItOWM2Yi04YWNiNzJhMDg3MzUiLCJ2ZXIiOiJiZjRkOTQyZS1jMzdjLTRjZGItOTAyOS1jZWJjOTcyY2NlMWMiLCJleHAiOjB9"}
+          ]
+        },
+        {"name": "Security Tools", "size": 1000,
+          "children":[
+            {"name": "Seclusion", "size":1000},
+            {"name": "Roaring", "size":1000},
+            {"name": "Fences", "size":1000},
+            {"name": "Fire", "size":1000}
+          ]
+        }
+      ]
+    },
+    {"name": "Actor", "color": "green",
+      "children": [
+        {"name": "Best Animated Feature (2002)", "size": 1000, "color": "purple"},
+        {"name": "Most Preferred Song from a Film (2005)", "size": 1000, "color": "purple"},
+        {"name": "Actor, Shrek (2001)", "size": 1000, "color": "red"},
+        {"name": "Actor, Shrek 2 (2004)", "size": 1000, "color": "red"},
+        {"name": "Actor, Shrek the Third (2007)", "size": 1000, "color": "red"},
+        {"name": "Actor, Shrek Forever After (2010)", "size": 1000, "color": "red"}
+      ]
+    },
+    {"name": "Personal Finance", "color": "green", "size": 1000,
+      "children":[
+        {"name": "Shrek Royalties Alt Investment", "size": 1000, "url": "https://public.com/alts/shrekroyalties?wpsrc=Organic+Search&wpsn=www.google.com"},
+        {"name": "Negotiated real-estate contract with king", "size": 1000, "url": "https://www.youtube.com/watch?v=fGoSddXUrG0"}
+      ]
+    },
+    {"name": "Hero", "color": "green",
+      "children": [
+        {"name": "Shrek LLC",  "size": 1000, "color": "blue"}
+        ]
+    },
+    {"name": "Friendship Development", "color": "green",
+      "children":[
+        {"name": "Donkey Management", "size": 1000, "url": "https://www.youtube.com/watch?v=P1o_EadrLQo",
+          "children":[
+            {"name": "selective hearing", "size":1000},
+            {"name": "waffle making", "size": 1000},
+            {"name": "games", "size": 1000,
+              "children":[
+                {"name": "blue flower, red thorns", "size": 1000, "url": "https://www.youtube.com/watch?v=7vl2gNADuEA"},
+                {"name": "Not be yourself for 5 minutes", "size": 1000, "url": "https://www.youtube.com/watch?v=PT4Ck7oduPs"}
+              ]
+            }
+          ]
+        },
+        {"name": "Fairytale friends", "size": 1000},
+        {"name": "Puss in Boots", "size": 1000,
+          "children": [
+            {"name": "Advanced Waffle Making", "size": 1000},
+            {"name": "Dragon-In-Law Relations", "size": 1000},
+            {"name": "Selective Hearing Skills", "size": 1000}
+          ]
+        }
+      ]
+    }
+  ]
+}
