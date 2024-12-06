@@ -2,7 +2,7 @@
 Use this template to transform your resume or CV into an interactive hierarchical tree.
 ![Shrek TreeCV example](images/shrek_treecv_fast.gif)
 
-### Why use a TreeCV?
+### Why use TreeCV?
 TreeCV is a skills-first presentation of your resume or CV that allows others
 to understand your skillset in an instant and then explore concrete evidence of your skills. 
 Nodes on the tree are color-coded to differentiate skills and various types of evidence
@@ -47,6 +47,28 @@ can be edited to use "size" to customize the size of the node.
 
 The main limitation of TreeCV is the length of the text ("name") that accompanies each node
 is fairly limited. Or maybe it's a feature that forces you to be concise?
+
+### Changing the initialization of the tree
+TreeCV allows you to customize what nodes on your tree are expanded or collapsed when your TreeCV is first loaded. By default, the nodes colored "green" (e.g., the "skills" nodes) are expandeded. This is seen in the javascript.js code:
+```
+const nodesToShow = new Set(['green']);
+
+function shouldShow(node) {
+    if (nodesToShow.has(node.data.color)) return true;
+    return node.children?.some(child => shouldShow(child)) || false;
+}
+```
+
+But you can have the tree initialize to other colors or even names of the nodes, like:
+
+```
+const nodesToShow = new Set(['Swamp Security', 'Actor', 'Shrek LLC']);
+
+function shouldShow(node) {
+    if (nodesToShow.has(node.data.name)) return true;
+    return node.children?.some(child => shouldShow(child)) || false;
+}
+```
 
 ### Dependencies
 This project is all html/css/javascript that runs client side. TreeCV repurposes the very nice collapsible tree from [D3](https://observablehq.com/@d3/collapsible-tree).

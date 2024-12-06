@@ -63,7 +63,6 @@ d3.json("profile.json").then(data => {
     // Keep track of nodes we want to show
     const nodesToShow = new Set(['green']);
 
-    // Recursion to show specified nodes and children
     function shouldShow(node) {
         if (nodesToShow.has(node.data.color)) return true;
         return node.children?.some(child => shouldShow(child)) || false;
