@@ -1,6 +1,6 @@
 # TreeCV
 Use this template to transform your resume or CV into an interactive hierarchical tree.
-![Shrek TreeCV example](images/shrek_treecv.gif)
+![Shrek TreeCV example](images/shrek_treecv_fast.gif)
 ### Why use a TreeCV?
 TreeCV is a skills-first presentation of your resume or CV that allows others
 to understand your skillset in an instant and then explore concrete evidence of your skills. 
