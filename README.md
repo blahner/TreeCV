@@ -1,6 +1,8 @@
 # TreeCV
 Use this template to transform your resume or CV into an interactive hierarchical tree.
+<img src="images/shrek.webp" width="50%">
 ![Shrek TreeCV example](images/shrek_treecv_fast.gif)
+
 ### Why use a TreeCV?
 TreeCV is a skills-first presentation of your resume or CV that allows others
 to understand your skillset in an instant and then explore concrete evidence of your skills. 
@@ -9,7 +11,10 @@ Nodes on the tree are color-coded to differentiate skills and various types of e
 of a traditional resume/CV with TreeCV by allowing you to list your education, overview, and experiences
 with clean javascript.
 
-See a real example of TreeCV [here](https://blahner.github.io/treecv/treecv.html).
+Interact with a real example of TreeCV [here](https://blahner.github.io/treecv/treecv.html).
+
+Here is what this template looks like:
+<img src="images/shrek_treecv_template.png" width="50%">
 
 ### Customizing your TreeCV
 Unless you are Shrek, you will spend most of your time editing profile.json.
